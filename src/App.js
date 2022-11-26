@@ -3,44 +3,18 @@
 import './style.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import EmojiButton from './EmojiButton';
 
-// function createCard(greeting, subheader) {
+// // Button component.
+// function EmojiButton(props) {
+//   // console.log(props)
 //   return (
-//     <div>
-//       <h1>{greeting}</h1>
-//       <h2>{subheader}</h2>
-//     </div>
+//     <button>
+//       <span role="img">{props.emoji}</span>
+//       {props.labelText}
+//     </button>
 //   )
 // }
-
-// function Card(props) {
-//   return (
-//     <div>
-//       <h1>{props.greeting}</h1>
-//       <h2>{props.subheader}</h2>
-//     </div>
-//   )
-// }
-
-// const element = (
-//   <div>
-//     <Card greeting="Hola!" subheader="Friday!"/>
-//     <Card greeting="Greetings!" subheader="Humans!"/>
-//     {/* {Card({greeting: "Hola from JSX!", subheader:"Time to learn"})}
-//     {Card({greeting: "Ques component?", subheader: "Let's find out!"})} */}
-//   </div>
-// )
-
-// Button component.
-function EmojiButton(props) {
-  // console.log(props)
-  return (
-    <button>
-      <span role="img">{props.emoji}</span>
-      {props.labelText}
-    </button>
-  )
-}
 // Header component
 function Header(props) {
   return (
@@ -78,14 +52,6 @@ function HomePage() {
             <EmojiButton emoji="🐕" labelText="Dogs" />
         </div>
       </Card>
-
-      {/* <div className="card">
-        <h2>What pets would you like to see?</h2>
-        <div>
-          <EmojiButton emoji="😸" labelText="Caaats"/>
-          <EmojiButton emoji="🐕" labelText="Dogs" />
-        </div>
-      </div> */}
     </main>
   )
 }
