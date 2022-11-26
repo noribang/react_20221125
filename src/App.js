@@ -5,6 +5,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import EmojiButton from './EmojiButton';
 import Header from './Header';
+import HomePage from './HomePage';
 
 // // Composition-children
 // function Card(props) {
@@ -17,24 +18,24 @@ import Header from './Header';
 //   )
 // }
 
-// HomePage component.
-function HomePage() {
-  return (
-    <main>
-      <Card title="Welcome to PetLaaaand!">
-        <em>Find your dream pet</em>
-        <p>Like puppies....</p>
-        <h3>Like kittens...</h3>
-      </Card>
-      <Card title="What pets would you like to see?">
-        <div>
-            <EmojiButton emoji="😸" labelText="Cats"/>
-            <EmojiButton emoji="🐕" labelText="Dogs" />
-        </div>
-      </Card>
-    </main>
-  )
-}
+// // HomePage component.
+// function HomePage() {
+//   return (
+//     <main>
+//       <Card title="Welcome to PetLaaaand!">
+//         <em>Find your dream pet</em>
+//         <p>Like puppies....</p>
+//         <h3>Like kittens...</h3>
+//       </Card>
+//       <Card title="What pets would you like to see?">
+//         <div>
+//             <EmojiButton emoji="😸" labelText="Cats"/>
+//             <EmojiButton emoji="🐕" labelText="Dogs" />
+//         </div>
+//       </Card>
+//     </main>
+//   )
+// }
 
 
 
