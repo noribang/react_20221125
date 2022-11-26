@@ -6,16 +6,16 @@ import ReactDOM from 'react-dom/client';
 import EmojiButton from './EmojiButton';
 import Header from './Header';
 
-// Composition-children
-function Card(props) {
-  console.log(props)
-  return (
-    <div className="card">
-      <h2>{props.title}</h2>
-      {props.children}
-    </div>
-  )
-}
+// // Composition-children
+// function Card(props) {
+//   console.log(props)
+//   return (
+//     <div className="card">
+//       <h2>{props.title}</h2>
+//       {props.children}
+//     </div>
+//   )
+// }
 
 // HomePage component.
 function HomePage() {
