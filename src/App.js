@@ -75,19 +75,6 @@ function App() {
     <div>
       <Header heading="PetLand" />
       <HomePage />
-      {/* <main>
-        <div className="card">
-          <h2>Welcome to PetLand!</h2>
-          <em>Find your dream pet</em>
-        </div>
-        <div className="card">
-          <h2>What pets would you like to see?</h2>
-          <div>
-            <EmojiButton emoji="😸" labelText="Caaats"/>
-            <EmojiButton emoji="🐕" labelText="Dogs" />
-          </div>
-        </div>
-      </main> */}
     </div>
   );
 }
