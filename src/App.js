@@ -4,28 +4,8 @@ import './style.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import EmojiButton from './EmojiButton';
+import Header from './Header';
 
-// // Button component.
-// function EmojiButton(props) {
-//   // console.log(props)
-//   return (
-//     <button>
-//       <span role="img">{props.emoji}</span>
-//       {props.labelText}
-//     </button>
-//   )
-// }
-// Header component
-function Header(props) {
-  return (
-    <header>
-      <h1>{props.heading}</h1>
-      <nav>
-        <EmojiButton emoji="👤" labelText="Login"/>
-      </nav>
-    </header>
-  )
-} 
 // Composition-children
 function Card(props) {
   console.log(props)
