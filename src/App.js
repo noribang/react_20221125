@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './style.css'
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -12,27 +13,27 @@ import ReactDOM from 'react-dom/client';
 //   )
 // }
 
-function Card(props) {
-  return (
-    <div>
-      <h1>{props.greeting}</h1>
-      <h2>{props.subheader}</h2>
-    </div>
-  )
-}
+// function Card(props) {
+//   return (
+//     <div>
+//       <h1>{props.greeting}</h1>
+//       <h2>{props.subheader}</h2>
+//     </div>
+//   )
+// }
 
-const element = (
-  <div>
-    <Card greeting="Hola!" subheader="Friday!"/>
-    <Card greeting="Greetings!" subheader="Humans!"/>
-    {/* {Card({greeting: "Hola from JSX!", subheader:"Time to learn"})}
-    {Card({greeting: "Ques component?", subheader: "Let's find out!"})} */}
-  </div>
-)
+// const element = (
+//   <div>
+//     <Card greeting="Hola!" subheader="Friday!"/>
+//     <Card greeting="Greetings!" subheader="Humans!"/>
+//     {/* {Card({greeting: "Hola from JSX!", subheader:"Time to learn"})}
+//     {Card({greeting: "Ques component?", subheader: "Let's find out!"})} */}
+//   </div>
+// )
 
 // Button component.
 function EmojiButton(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <button>
       <span role="img">{props.emoji}</span>
@@ -51,24 +52,45 @@ function Header(props) {
     </header>
   )
 } 
+// Composition-children
+function Card(props) {
+  console.log(props)
+  return (
+    <div className="card">
+      <h2>{props.title}</h2>
+      {props.children}
+    </div>
+  )
+}
+
 // HomePage component.
 function HomePage() {
   return (
     <main>
-      <div className="card">
-        <h2>Welcome to PetLand!</h2>
+      <Card title="Welcome to PetLaaaand!">
         <em>Find your dream pet</em>
-      </div>
-      <div className="card">
+        <p>Like puppies....</p>
+        <h3>Like kittens...</h3>
+      </Card>
+      <Card title="What pets would you like to see?">
+        <div>
+            <EmojiButton emoji="😸" labelText="Cats"/>
+            <EmojiButton emoji="🐕" labelText="Dogs" />
+        </div>
+      </Card>
+
+      {/* <div className="card">
         <h2>What pets would you like to see?</h2>
         <div>
           <EmojiButton emoji="😸" labelText="Caaats"/>
           <EmojiButton emoji="🐕" labelText="Dogs" />
         </div>
-      </div>
+      </div> */}
     </main>
   )
 }
+
+
 
 function App() {
   return (
