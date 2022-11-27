@@ -6,7 +6,8 @@ import ReactDOM from 'react-dom/client';
 import Header from './Header';
 import HomePage from './HomePage';
 
-function App() {
+export default function App() {
+// function App() {
   return (
     <div>
       <Header heading="PetLand" />
@@ -15,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
